@@ -1,6 +1,6 @@
 {
-  "name": "cypress-image-diff-js",
-  "version": "0.0.0",
+  "name": "@chesscom/cypress-image-diff-js",
+  "version": "1.18.2",
   "description": "Visual regression testing tool with cypress",
   "main": "dist/command.js",
   "bin": {
@@ -14,7 +14,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uktrade/cypress-image-diff.git"
+    "url": "git+https://github.com/chesscom/cypress-image-diff.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "release": {
     "branches": [
@@ -31,11 +34,11 @@
     "comparison"
   ],
   "author": "Filippo Raimondi",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/uktrade/cypress-image-diff/issues"
+    "url": "https://github.com/chesscom/cypress-image-diff/issues"
   },
-  "homepage": "https://github.com/uktrade/cypress-image-diff#readme",
+  "homepage": "https://github.com/chesscom/cypress-image-diff#readme",
   "dependencies": {
     "@babel/runtime": "^7.12.5",
     "arg": "^4.1.1",
