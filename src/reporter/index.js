@@ -30,7 +30,7 @@ export const generateTemplate = options => {
   return template(
     {
       ...options,
-      screenshotDirectory: process.env.CYPRESS_IMAGE_DIFF_DIRECTORY ?? 'cypress-visual-screenshots',
+      screenshotDirectory: process.env.CYPRESS_IMAGE_DIFF_DIRECTORY || 'cypress-visual-screenshots',
     },
     {
       allowProtoPropertiesByDefault: {
