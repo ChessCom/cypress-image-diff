@@ -28,10 +28,7 @@ export const generateTemplate = options => {
   const template = Handlebars.compile(templateFile)
 
   return template(
-    {
-      ...options,
-      screenshotDirectory: process.env.CYPRESS_IMAGE_DIFF_DIRECTORY || 'cypress-visual-screenshots',
-    },
+    options,
     {
       allowProtoPropertiesByDefault: {
         testStatus: true,

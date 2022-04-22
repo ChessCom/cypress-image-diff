@@ -1,15 +1,13 @@
 import path from 'path'
 
-const parentDirFolderName = process.env.CYPRESS_IMAGE_DIFF_DIRECTORY || 'cypress-visual-screenshots';
+const parentDirFolderName = '.artifacts';
 const parentDir = path.join(process.cwd(), parentDirFolderName)
 const baseline = path.join(process.cwd(), parentDirFolderName, 'baseline')
 const comparison = path.join(process.cwd(), parentDirFolderName, 'comparison')
 const diff = path.join(process.cwd(), parentDirFolderName, 'diff')
 const reportDir = path.join(
   process.cwd(),
-  process.env.CYPRESS_IMAGE_DIFF_DIRECTORY
-    ? path.join(process.env.CYPRESS_IMAGE_DIFF_DIRECTORY, 'reports')
-    : 'cypress-visual-report'
+  '.artifacts/report'
 );
 
 const paths = {
