@@ -23,7 +23,7 @@ const paths = {
   },
   parentDir,
   reportDir,
-  report: instance => { return path.join(reportDir, `cypress-visual-report${instance}.${globalThis.cypressBrowserName}.html`) },
+  report: instance => { return path.join(reportDir, `cypress-visual-report${instance}.html`) },
 }
 
 export default paths
