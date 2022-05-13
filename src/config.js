@@ -12,9 +12,9 @@ const reportDir = path.join(
 
 const paths = {
   image: {
-    baseline: (testName) => { return path.join(baseline, `${testName}.${globalThis.cypressBrowserName}.png`) },
-    comparison: (testName) => { return path.join(comparison, `${testName}.${globalThis.cypressBrowserName}.png`) },
-    diff: (testName) => { return path.join(diff, `${testName}.${globalThis.cypressBrowserName}.png`) },
+    baseline: (testName) => { return path.join(baseline, `${testName}.png`) },
+    comparison: (testName) => { return path.join(comparison, `${testName}.png`) },
+    diff: (testName) => { return path.join(diff, `${testName}.png`) },
   },
   dir: {
     baseline,

@@ -34,8 +34,7 @@ export const generateTemplate = options => {
         testStatus: true,
         name: true,
       },
-    },
-    globalThis.cypressBrowserName
+    }
   )
 }
 
