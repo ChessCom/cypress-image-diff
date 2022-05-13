@@ -107,9 +107,13 @@ const getCompareSnapshotsPlugin = (on, config) => {
   // Delete comparison, diff images and generated reports to ensure a clean run
   tearDownDirs()
 
+  // Get Browser name
+  on('before:run', (browser) => {
+    globalThis.cypressBrowserName = browser.name
+  })
+
   // Force screenshot resolution to keep consistency of test runs across machines
   on('before:browser:launch', (browser, launchOptions) => {
-    globalThis.cypressBrowserName = browser.name
     const width = config.viewportWidth || '1280'
     const height = config.viewportHeight || '720'
 
