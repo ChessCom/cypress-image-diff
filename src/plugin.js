@@ -108,8 +108,8 @@ const getCompareSnapshotsPlugin = (on, config) => {
   tearDownDirs()
 
   // Get Browser name
-  on('before:run', (browser) => {
-    globalThis.cypressBrowserName = browser.name
+  on('before:run', (details) => {
+    globalThis.cypressBrowserName = details.browser.name
   })
 
   // Force screenshot resolution to keep consistency of test runs across machines
