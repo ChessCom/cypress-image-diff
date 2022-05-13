@@ -1,6 +1,6 @@
 {
   "name": "@chesscom/cypress-image-diff-js",
-  "version": "1.18.9",
+  "version": "1.18.10",
   "description": "Visual regression testing tool with cypress",
   "main": "dist/command.js",
   "bin": {
