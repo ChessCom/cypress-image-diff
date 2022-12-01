@@ -4,7 +4,7 @@ import { PNG } from 'pngjs'
 const createDir = dirs => {
   dirs.forEach(dir => {
     if (!fs.existsSync(dir)) {
-      fs.mkdirSync(dir, {recursive: true})
+      fs.mkdirSync(dir, { recursive: true })
     }
   })
 }
@@ -35,7 +35,7 @@ const setFilePermission = (dir, permission) => {
 }
 
 const renameAndMoveFile = (originalFilePath, newFilePath) => {
-  fs.moveSync(originalFilePath, newFilePath, {overwrite: true})
+  fs.copySync(originalFilePath, newFilePath, { overwrite: true })
 }
 
 const parseImage = async image => {
